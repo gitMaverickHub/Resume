@@ -8,7 +8,7 @@
 
 <body>
     <div class="container">
-        <div class="center title">
+        <div class="title">
             <h1><u>Maverick Boyle</u></h1>
             <h3>Aerospace Engineer, Computer Scientist, Mathematician</h3>
         </div>
@@ -18,22 +18,22 @@
             A&M University. I take a great amount of pride in my work and love learning new skills. If you'd like to learn more
             about me, check out the links below.</p>
         </div>
-        <div class="center picture">
-            <img src="./headshot.png" height="520" alt="Headshot">
+        <div class="picture">
+            <img src="./headshot.png" alt="Headshot">
         </div>
-        <div class="center">
+        <div class="center link">
             <h2><a href="./about-me.html">About Me</a></h3>
         </div>
-        <div class="center">
+        <div class="center link">
             <h2><a href="./experience.html">Experience</a></h3>
         </div>
-        <div class="center">
+        <div class="center link">
             <h2><a href="./contact-me.html">Contact Me</a></h3>
         </div>
-        <div class="center">
+        <div class="center link">
             <h2><a href="./education.html">Education</a></h3>
         </div>
-        <div class="center">
+        <div class="center link">
             <h2><a href="./skills.html">Skills</a></h3>
         </div>
     </div>
@@ -41,17 +41,28 @@
 
 <style>
     body{
-        background: maroon;
         text-align: center;
         margin: 0;
         padding: 0;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    p{
+        font-size: 26px;
     }
     .container{
         height: 100vh;
         display: grid;
         gap: 3 rem;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(4, 1fr);
     }
     .center{
         display: flex;
@@ -59,20 +70,35 @@
         align-items: center;
     }
     .title{
+        background: maroon;
         color: white;
-        grid-column: span 5;
+        grid-column: span 10;
         display: flex;
         flex-direction: column;
     }
     .intro{
         background: white;
-        grid-column: span 3;
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row: span 2;
         display: flex;
         flex-direction: column;
+
     }
     .picture{
         background: white;
+        grid-column-start: 8;
+        grid-column-end: 10;
+        grid-row: span 2;
+        justify-content: left;
+        align-items: center;
+    }
+    .picture>img{
+        height: 100%;
+    }
+    .link{
         grid-column: span 2;
+        background: maroon;
     }
     a:link{
         color: white;
