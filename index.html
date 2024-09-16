@@ -13,75 +13,78 @@
 
 <body>
     <div class="container">
-        <div class="title">
+        <div class="center title">
             <h1><u>Maverick Boyle</u></h1>
             <h3>Aerospace Engineer, Computer Scientist, Mathematician</h3>
         </div>
         <div class="center intro">
             <h2>Howdy! Welcome to my Resume Website!</h2>
-            <p>I am a solution-driven and detail-oriented aerospace engineer, computer scientist, and mathematician from Texas
-            A&M University. I take a great amount of pride in my work and love learning new skills. If you'd like to learn more
-            about me, check out the links below.</p>
+            <p>I am a solution-driven and detail-oriented aerospace engineer, computer scientist, and mathematician from
+                Texas
+                A&M University. I take a great amount of pride in my work and love learning new skills. If you'd like to
+                learn more
+                about me, check out the links below.</p>
         </div>
-        <div class="picture">
+        <div class="center picture">
             <img src="./headshot.png" alt="Headshot">
         </div>
-        <div class="center link">
-            <h2><a href="./about-me.html">About Me</a></h3>
+        <div class = "links">
+            <span><h2><a href="./about-me.html">About Me</a></h2></span>
+            <span><h2><a href="./experience.html">Experience</a></h2></span>
+            <span><h2><a href="./contact-me.html">Contact Me</a></h2></span>
+            <span><h2><a href="./education.html">Education</a></h2></span>
+            <span><h2><a href="./skills.html">Skills</a></h2></span>
         </div>
-        <div class="center link">
-            <h2><a href="./experience.html">Experience</a></h3>
-        </div>
-        <div class="center link">
-            <h2><a href="./contact-me.html">Contact Me</a></h3>
-        </div>
-        <div class="center link">
-            <h2><a href="./education.html">Education</a></h3>
-        </div>
-        <div class="center link">
-            <h2><a href="./skills.html">Skills</a></h3>
-        </div>
+        </body>
     </div>
 </body>
 
 <style>
-    body{
+    body {
         text-align: center;
         margin: 0;
         padding: 0;
     }
-    h1{
+
+    h1 {
         font-size: 40px;
     }
-    h2{
+
+    h2 {
         font-size: 30px;
     }
-    h3{
+
+    h3 {
         font-size: 20px;
     }
-    p{
+
+    p {
         font-size: 16px;
     }
-    .container{
+
+    .container {
         height: 100vh;
         display: grid;
         gap: 3 rem;
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
-    .center{
+
+    .center {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .title{
+
+    .title {
         background: maroon;
         color: white;
         grid-column: span 10;
         display: flex;
         flex-direction: column;
     }
-    .intro{
+
+    .intro {
         background: white;
         grid-column-start: 2;
         grid-column-end: 7;
@@ -90,7 +93,8 @@
         flex-direction: column;
 
     }
-    .picture{
+
+    .picture {
         background: white;
         grid-column-start: 8;
         grid-column-end: 10;
@@ -98,55 +102,117 @@
         justify-content: left;
         align-items: center;
     }
-    .picture>img{
+
+    .picture>img {
         height: 100%;
     }
-    .link{
-        grid-column: span 2;
+
+    .links {
+        grid-column: span 10;
         background: maroon;
+        display: flex;
+        align-items: center;
     }
-    a:link, a:visited{
+
+    span {
+        flex-basis: 20%;
+    }
+
+    a:link, a:visited {
         color: white;
     }
-    a:hover{
+
+    a:hover {
         color: black;
     }
 
     /* If needed, Laptops: 1201-1600px */
 
     /* Tablets */
-    @media (min-width: 490px) and (max-width: 1200px){
-        h2{
+    @media (min-width: 490px) and (max-width: 1200px) {
+        h2 {
             font-size: 16px;
         }
-        p{
+
+        p {
+            font-size: 12px;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 490px) {
+        h3 {
+            font-size: 18px;
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+
+        p {
             font-size: 12px;
         }
     }
 
-    @media (min-width: 481px) and (max-width: 490px){
-        h3{
-            font-size: 18px;
-        }
-        h2{
+    /* Mobile Devices */
+    @media (min-width: 1px) and (max-width: 480px) {
+        h2 {
             font-size: 16px;
         }
-        p{
+
+        p {
             font-size: 12px;
         }
-    }
-    
-     /* Mobile Devices */
-    @media (min-width: 1px) and (max-width: 480px){
-        h2{
-            font-size: 10px;
+
+        .container {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(30, 1fr);
         }
-        p{
-            font-size: 5px;
+
+        .title {
+            grid-column: span 3;
+            grid-row-start: 1;
+            grid-row-end: 11;
         }
+
+        .intro {
+            grid-row-start: 21;
+            grid-row-end: 31;
+            grid-column: span 3;
+            background: maroon;
+            color: white;
+        }
+
+        .picture {
+            grid-column-start: 3;
+            grid-row-start: 11;
+            grid-row-end: 21;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .picture>img {
+            height: 50%;
+        }
+
+        .links {
+            flex-direction: column;
+            grid-column: span 2;
+            grid-row-start: 11;
+            grid-row-end: 21;
+            background-color: white;
+            align-items: center;
+
+        }
+
+        a:link, a:visited {
+        color: black;
+        }
+
+        a:hover {
+            color: maroon;
+        }
+
         /* need to the grid, my pictue wont fit */
     }
-    
 </style>
 
 </html>
