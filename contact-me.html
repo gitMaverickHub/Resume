@@ -8,17 +8,44 @@
 </head>
 
 <body>
-    <h2>Contact me at:</h2>
-    <p>Email: maverick_boyle@yahoo.com</p>
-    <p>Phone Number: (817)899-5026</p>
-    <p>Location: College Station, TX</p>
-    <p>ADD LINKED IN</p>
-    <img src="./contact.png" alt="Contact Icons" />
+    <div class = "center container">
+        <span><h2>Contact me!</h2></span>
+        <span><p>Email: maverick_boyle@yahoo.com</p></span>
+        <span><p>Phone Number: (817)899-5026</p></span>
+        <span><p>Location: College Station, TX</p></span>
+        <span><p>LinkedIn: Maverick Boyle</p></span>
+        <img src="./contact.png" alt="Contact Icons"/>
+    </div>
 </body>
 
 <style>
+
+    h2{
+        font-size: 60px;
+    }
+
+    p{
+        font-size: 40px;
+    }
+
     body{
         background: turquoise
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    span{
+        flex-basis: 16%;
     }
 </style>
 
