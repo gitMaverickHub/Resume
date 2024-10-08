@@ -7,47 +7,108 @@
 </head>
 
 <body>
-
+    
     <!--Reformat this page. It's poorly structured and looks bad. Also, color coordinate skills into what I am most to least comfortable using. Elaborate on my experiences with the skills, and possibly
         cut down on the number of interpersonal skills.-->
     
-    <h2>Skills</h2>
-    
-    <h3>Technical Skills</h3>
-    <ul>
-        <li>C++</li>
-        <li>MATLAB</li>
-        <li>SolidWorks</li>
-        <li>LaTex</li>
-        <li>Python</li>
-        <li>Haskell</li>
-        <li>Abaqus</li>
-        <li>GitHub</li>
-        <li>Excel</li>
-        <li>Java</li>
-        <li>Web Development</li>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-        </ul>
-    </ul>
+    <div class = "container">
 
-    <h3>Interpersonal Skills</h3>
-    <ul>
-        <li>Quick Learner</li>
-        <li>Communcation</li>
-        <li>Teamwork</li>
-        <li>Leadership</li>
-        <li>Time Management</li>
-        <li>Driven/Hardworking</li>
-        <li>Problem Solving</li>
-        <li>Detail-Oriented</li>
-        <li>Organized</li>
-    </ul>
+        <div class = "title">
+            <h1>Skills</h1>
+        </div>
+        
+        <div class = "skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li class="green">C++</li>
+                <li>MATLAB</li>
+                <li>SolidWorks</li>
+                <li>LaTex</li>
+                <li>Python</li>
+                <li>Haskell</li>
+                <li>Abaqus</li>
+                <li>GitHub</li>
+                <li>Excel</li>
+                <li>Java</li>
+                <li>Web Development</li>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </ul>
+            <p>
+                <span style="color:green">Green</span> are the things I am most comfortable with. <span style="color:orange">Orange</span> are the things I am 
+                somewhat comfortable with. <span style="color:red">Red</span> is what I am least comfortable with.
+            </p>
+        </div>
+
+        <div class = "skills">
+            <h2>Interpersonal Skills</h2>
+            <ul>
+                <li>Quick Learner</li>
+                <li>Communcation</li>
+                <li>Teamwork</li>
+                <li>Leadership</li>
+                <li>Time Management</li>
+                <li>Driven/Hardworking</li>
+                <li>Problem Solving</li>
+                <li>Detail-Oriented</li>
+                <li>Organized</li>
+            </ul>
+            <p>
+                Elaborate and give examples of each.
+            </p>
+        </div>
+
+    </div>
 
 </body>
 
 <style>
+
+    .container {
+        display: grid;
+        gap: 0px;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    
+    .title {
+        grid-column: span 2;
+        text-align: center;
+    }
+
+    .skills {
+        grid-column: span 1;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .orange {
+        color: orange;
+    }
+
+    .red {
+        color: red;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    ul {
+    	position: relative; 
+        display: inline-block; 
+        padding-left: 1em; 
+        left: 50%; 
+        transform: translateX(-50%);   
+    }
+
+    p{
+        text-align: center;
+    }
 
 </style>
 
