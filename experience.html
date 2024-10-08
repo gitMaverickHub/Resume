@@ -3,17 +3,120 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Projects</title>
-    <link rel="stylesheet" href="./resume-style.css" />
+    <title>Experience</title>
 </head>
 
 <body>
-    <p>Include a summary of projects with pictures and links to the projects in 
-       greater detail
-    </p>
+
+    <div class = "container">
+
+        <div class = "title">
+            <h1>Projects</h1>
+        </div>
+    
+        <div class = "projects">
+            
+            <h2>School Projects</h2>
+
+            <p>
+                While I have completed more projects throughout school, these are the ones
+                I have taken the most pride in. These projects are all part of upper-level
+                classes and are considered very difficult. I made an A on all of these projects
+                and even perfect scores on some of them.
+            </p>
+
+            <a href="./Projects/School Projects/HTML Pages/PET Capstone.html">PET - Capstone</a>
+            <p>
+                The PET is...I did...
+            </p>
+
+            <a href="./Projects/School Projects/HTML Pages/SpaceCRAFT Research.html">SpaceCRAFT - Research</a></li>
+            <p>
+                SpaceCRAFT is a .... I did....
+            </p>
+
+            <a href="./Projects/School Projects/HTML Pages/Chemical Rocket Engine Design.html">Chemical Rocket Engine Design</a>
+            <p>
+                yadda yadda yadda
+            </p>
+
+            <a href="./Projects/School Projects/HTML Pages/Aerothermodynamics 1.html">Aeorthermodynamics 1</a>
+            <p>
+                yadda yadda yadda
+            </p>
+
+            <a href="./Projects/School Projects/HTML Pages/Aerothermodynamics 2.html">Aeorthermodynamics 2</a>
+            <p>
+                yadda yadda yadda
+            </p>
+
+            <a href="./Projects/School Projects/HTML Pages/FEM.html">Finite Element Method (FEM)</a>
+            <p>
+                yadda yadda yadda
+            </p>
+
+            <a href="./Projects/School Projects/HTML Pages/Machine Learning.html">Machine Learning</a>
+            <p>
+                yadda yadda yadda
+            </p>
+
+            <a href="./Projects/School Projects/HTML Pages/Protection against Electromagnetic Fields and Radiation using Plasma.html">Protection against Electromagnetic Fields and Radiation using Plasma</a>
+            <p>
+                yadda yadda yadda
+            </p>
+
+        </div>
+
+        <div class = "projects">
+
+            <h2>Personal Projects</h2>
+
+            <a href="./index.html">Resume Website</a>
+
+            <p>Description of resume website</p>
+
+            <p>The rest are still being worked on.</p>
+
+        </div>
+
+    </div>
+
 </body>
 
 <style>
+
+    .container {
+        display: grid;
+        gap: 0px;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    
+    .title {
+        grid-column: span 2;
+        text-align: center;
+    }
+
+    .projects {
+        grid-column: span 1;
+        text-align: center;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    ul {
+    	position: relative; 
+        display: inline-block; 
+        padding-left: 1em; 
+        left: 50%; 
+        transform: translateX(-50%);   
+    }
+
+    p{
+        text-align: center;
+    }
 
 </style>
 
