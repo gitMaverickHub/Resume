@@ -3,19 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.00, minimum-scale=1.00, maximum-scale=1.10">
+    <!--
+    Currently, the line above seems to be ignored. Assuming most people don't zoom past 125%, this shouldn't be an issue, but I
+    would like to look over this more at a later date.
+    -->
     <title>Maverick's Resume</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.00>
 </head>
 
 <body>
-    
     <div class="container">
-        
         <div class="center title">
             <h1><u>Maverick Boyle</u></h1>
             <h3>Aerospace Engineer, Computer Scientist, Mathematician</h3>
         </div>
-        
         <div class="center intro">
             <h2>Howdy! Welcome to my Resume Website!</h2>
             <p>I am a solution-driven and detail-oriented aerospace engineer, computer scientist, and mathematician from
@@ -24,11 +25,9 @@
                 learn more
                 about me, check out the links below.</p>
         </div>
-        
         <div class="center picture">
-            <img src="./Images/headshot.png" alt="Headshot">
+            <img src="./images/headshot.png" alt="Headshot">
         </div>
-        
         <div class = "links">
             <span><h2><a href="./experience.html">Experience</a></h2></span>
             <span><h2><a href="./skills.html">Skills</a></h2></span>
@@ -36,13 +35,11 @@
             <span><h2><a href="./education.html">Education</a></h2></span>
             <span><h2><a href="./about-me.html">About Me</a></h2></span>
         </div>
-
+        </body>
     </div>
-    
 </body>
 
 <style>
-    
     body {
         text-align: center;
         margin: 0;
@@ -68,7 +65,7 @@
     .container {
         height: 100vh;
         display: grid;
-        gap: 3 rem;
+        gap: 0px;
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
@@ -94,6 +91,7 @@
         grid-row: span 2;
         display: flex;
         flex-direction: column;
+
     }
 
     .picture {
@@ -101,6 +99,8 @@
         grid-column-start: 8;
         grid-column-end: 10;
         grid-row: span 2;
+        /*justify-content: left;
+        align-items: center;*/
     }
 
     .picture>img {
@@ -125,7 +125,7 @@
     a:hover {
         color: black;
     }
-/*
+
     /* If needed, Laptops: 1201-1600px */
 
     /* Tablets */
@@ -209,8 +209,6 @@
         }
 
     }
-*/
-    
 </style>
 
 </html>
