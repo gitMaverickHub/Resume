@@ -5,6 +5,12 @@
     Find a wat to make the terminal print indefinitely to the right rather than start a new line. Also adjust setwidth size. Find a way to set links. Set a way to exit filter early.
     Also make a way to input classes for places and subraces where if I put Hill Dwarf, Dwarf is autopopulated and if I put Kror Forest Faedron is autopopulated
     Consider things like this with magics as well and combat roles.
+
+    Find a way to print only desired date. For instance if I only want to know about a characters place and combat role, it prints only that
+
+    Possibly make a template. Possibly make a recipes class similar to characters class and make an app from that. This would be good c++ project, app making, and web development ie c++, html, css, and javascript practice
+
+    Possibly use multithreading if applicable
 */
 
 #include "characters.cpp"
