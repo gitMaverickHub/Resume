@@ -1,0 +1,29 @@
+/* 
+    Using a map does not work for this instance because there is not a constructor for a map with the second parameter, the value, being the type, array<vector<string>, 2>
+    While adding new character, try to alphabetize the various lists eg Character example = Character("exampleCharacter", {"a","b","c"},{"a","d","e"},...)
+
+    Find a wat to make the terminal print indefinitely to the right rather than start a new line. Also adjust setwidth size. Find a way to set links. Set a way to exit filter early.
+    Also make a way to input classes for places and subraces where if I put Hill Dwarf, Dwarf is autopopulated and if I put Kror Forest Faedron is autopopulated
+    Consider things like this with magics as well and combat roles.
+*/
+
+#include "characters.cpp"
+
+int main() {
+
+    Character krakxulKror = Character("Krak'xul Kror", {"Lancer", "Knight"},{"Electromancy", "Physical Sourcery", "Polymorphism", "Enhancing", "Aeromancy", "Pyromancy", "Hydromancy"},{"Children of Kror", "Warlock Slayers"},{"Faedron", "Kror Forest", "Dunuth"},{"Elf"},{"Wild Elf"});
+    Character dahliaKror = Character("Dahlia Kror", {"Augmentor", "Combat Medic", "Lancer", "Flex"},{"Polymorphism", "Healing", "Debilitating", "Aeromancy", "Cryomnacy", "Electromancy", "Hydromancy", "Thermomancy", "Pyromancy"},{"Children of Kror", "Warlock Slayers"},{"Faedron", "Kror Forest", "Dunuth"},{"Human"},{"Faedronic Human"});
+    Character elijahKror = Character("Elijah Kror", {"Bulwark", "Fighter"}, {"Physcial Sourcery", "Polymorphism", "Enhancing", "Hex"}, {"Children of Kror", "Warlock Slayers"}, {"Faedron", "Kror Forest", "Dunuth"}, {"Dwarf"}, {"Hill Dwarf"});
+    Character daevenKror = Character("Daeven Kror", {"Knight"}, {"Conjuration", "Hex"}, {"Children of Kror", "Warlock Slayers"}, {"Faedron", "Kror Forest", "Dunuth"}, {"Reptilian"}, {"Black Drakonian Reptilian"});
+
+    CharactersTable ogTable = CharactersTable();
+
+    ogTable.insert(krakxulKror);
+    ogTable.insert(dahliaKror);
+    ogTable.insert(elijahKror);
+    ogTable.insert(daevenKror);
+
+    Program program = Program(ogTable);
+    program.start();
+    
+}
