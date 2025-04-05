@@ -1,3 +1,6 @@
+# To run this program, pandas must be imported. To do this you'll need a virtual environment. Refer to https://www.youtube.com/watch?v=yG9kmBQAtW4&list=PLHQIBcQp_xR12cE1dpUUyTlpCx0qphvND&index=7 
+# The terminal will output BOECWXH
+
 import pandas as pd
 
 def decoding_a_secret_message(url: str):
