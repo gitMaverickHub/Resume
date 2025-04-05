@@ -1,0 +1,1 @@
+This started as a small personal project that I put on my resume as a simple example of my practice with C++. It has evolved beyond its original scope and will be put into its own repo. View my personal repo if you would like to see the progress of this project.
