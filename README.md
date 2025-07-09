@@ -8,4 +8,4 @@
 
 # I want to adjust the link on my name on the homepage for phones to be white with a black hover unlike the other links that are black with a maroon hover.
 
-# UPDATE THE RESUME PNG LINKED TO MY NAME ON THE MAIN PAGE
+# UPDATE THE RESUME PNG LINKED TO MY NAME ON THE MAIN PAGE TO MY NEW RESUME. THE ONE I HAVE HAS A SMALL ERROR. IT LISTS JAVA TWICE. DO THIS WHEN I MAKE A COMPLETELTY UPDATED RESUME.
