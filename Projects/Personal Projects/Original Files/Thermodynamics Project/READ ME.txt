@@ -1,0 +1,65 @@
+Left to do: plot, the lines listed in the readme instruction section need to be updated once the cold-air standard and plot functions are added to the code.
+
+READ ME: 
+
+This program is a way to simulate a turbojet cycle with 1 or multiple compressor and turbine stages and with and without an afterburner. Thrust is also calculated. This uses the air standard assumption. 
+The air Standard assumption requires interpolating imperical data to keep a higher-level of accuracy. I intend to also add into the program a simulation using the cold-air standard assumption which assumes 
+contsant specific heat at constant pressure which allows the use of more calculations rather than table searching at the cost of accuracy. This program will then be not only a means to simulate the 
+cycle of turbojet engines (or realyl a gas generator; I didn't even incorporate an inlet diffuser), but it will also be a way to analysis the effectivenss of adding an afterburner and the accuracy of using
+the cold-air standard assumption. Note that the lines plotted between the states should be curved to more accurately show the engine cycle.
+
+Note: The plotting functions have not been finished yet. I am having difficulty getting matplot++ to work with cmake.
+
+INSTRUCTIONS: ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Compile and execute the c++ program like any other(s). Instuctions will pop up in the terminal as the program is ran. Follow along with the instructions. This instruction section is to give instructions for if there
+are any issues plotting, if the mass flow rate equations for the combustor and/or afterburner want to be changed, if example inputs are needed, or if the data outputted to the terminal is not neatly outputted. 
+
+This program is an expansion of a much simpler project I had at Texas A&M University. That project provided the arbitrary formulas for the mass flow rate of the fuel being added in the combustor and the afterburner.
+To change those equations to the desire equations or values, they can be found and changed on lines 81 and 129 of Thermodynamic Code.cpp respectively. If for any reason, the line numbers have been changed due to some
+formatting issue(s) downloading the .cpp file, they are both on the second lines of their respective function definitions, void Cycle::combustor() and void Cycle::afterburner(), in the Thermodynamic Code.cpp file.
+
+This program uses matplot++ to plot. Instructions on how to install matplot++ and other dependencies to run it are given in the first url website below. If that is too difficult/inconvenient, the plot function,
+void Cycle::plot(), can be block commented out between lines ____ and ____ along with the call to the plot function on line 25. This is all within the Thermodynamic Code.cpp file. This program automatically creates 
+an Output.csv file which can then be used to plot the cycles. This can be done in excel or csvplot.com or any other preferred way. Please also note that if a "-" appears anywhere in the Output.csv file or the table 
+printed to the terminal, then the data is bad. While calculating the stages, the data went out of the range of what can be interpolated. Please put new input values in. Instructions for how to plot in excel and the 
+url for csvplot.com are the second and third urls below respectively. Note that the Output.csv file will need some minor editing in order to work in the csvplot.com, but it should be simple and self-explanatory. 
+Another method to plot is to use matplotlib. Instructions for how to install and run matplotlib are given in the 4th and 5th url websites listed below. Note that this will require making your own code for the 
+plotting function(s).
+
+https://github.com/alandefreitas/matplotplusplus
+https://www.youtube.com/watch?v=0jdX22qM8JA
+https://www.csvplot.com/
+https://www.youtube.com/watch?v=Xp3ntYGs8No
+https://www.youtube.com/watch?v=43Wp_qxyXDM&ab_channel=MrAi
+
+Example inputs for Input.csv file:
+Veloicity:                                  - 550
+Altitude:                                   - 5000
+Inlet Area (Compressor):                    - 0.5
+Number of Stages (Compressor):              - 14
+Stage Efficienies (Compressor):             - 0.97
+Overall Pressure Ratio:                     - 40
+Fuel Heating Value:                         - 43360
+Number of Stages (Turbine):                 - 4
+Stage Efficiencies:                         - 0.94
+Exit Area:                                  - 0.2
+Nozzle Efficiency:                          - 0.93
+
+Note: I made print function to print neatly to my own terminal. I zoom my screens out a bit than most people, so the data might not output neatly with perfect rows and columns. The program also creates an Output.csv
+file with the same date. Please view it there, if you're are having difficulty viewing the data outputted to the terminal. Please also note that if a -1 appears anywhere in the Output.csv file, then the data is bad.
+While calculating the stages, the data went out of the range of what can be interpolated. Please put new input values in.
+
+ASSUMPTIONS: ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Assume the working fluid is air.
+Assume ideal gas.
+Assume steady-state.
+Assume disipative forces are negligible.
+Assume the change in the specific gas constant is negligible, and use the air specific gas constant the entire cycle.
+Assume the combustor stage is isobaric.
+Assume the static pressure at the exit is the same as the inlet.
+Assume the stages in the compressore have the same pressure increases.
+Assume the stages in the turbine and nozzle have the same pressure drops.
+Assume the stages in the compressor have the same efficeincies.
+Assume the stages in the turbine have the same efficeincies.
