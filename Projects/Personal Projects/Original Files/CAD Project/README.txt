@@ -1,1 +1,0 @@
-This was just simlpe AutoCAD practice. I followed along with https://www.youtube.com/watch?v=XSRn0maJRfg&ab_channel=SourceCAD to get a quick refresher.

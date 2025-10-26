@@ -1,1 +1,0 @@
-This was a simple SolidWorks practice. I followed along with https://www.youtube.com/watch?v=2mBRTeEtsv4&list=PLHQIBcQp_xR12cE1dpUUyTlpCx0qphvND&index=18&ab_channel=CADCAMTUTORIALBYMAHTABALAM for a quick refresher. This .html page still needs to be finished.
